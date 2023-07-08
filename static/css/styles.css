@@ -1,0 +1,54 @@
+/* body {
+    background-color: #F2E6D0;
+} */
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    color: #4C591C;
+}
+
+footer {
+    border-top: 6px solid #BFBA73;
+    background-color: #4C591C;
+    color: #F2E6D0
+}
+
+.logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #4C591C;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.bg-sand {
+    background-color: #F2E6D0;
+}
+
+.form-group label {
+    color: #4C591C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #4C591C;
+    border-color: #F2E6D0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #736F34;
+    border-color: #BFBA73;
+}
+
