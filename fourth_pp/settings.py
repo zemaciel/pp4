@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-xtcs#irev&&7g95o-_4cv+kz+m!ps$!&$a#p7dgqfpvk5^8e(!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zemaciel-pp4-urnabu71far.ws-eu99.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
+ALLOWED_HOSTS = ['8000-zemaciel-pp4-7hmy4v4z55p.ws-eu101.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
 
 
 # Application definition

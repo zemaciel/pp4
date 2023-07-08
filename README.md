@@ -54,5 +54,9 @@ The changes now need to be migrated to the data base: `python3 manage.py migrate
 To run the server simply type `python3 [manage.py](http://manage.py) runserver`
 </details>
 
+Create super user
+
+Deployment
+
 
 
