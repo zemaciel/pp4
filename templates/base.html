@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
@@ -53,14 +53,14 @@
     </nav>
 
 
-    <main>
+    <main class="content">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
 
     <!-- Footer -->
-    <footer class="mt-5">
+    <footer class="footer mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">

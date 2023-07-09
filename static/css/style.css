@@ -1,5 +1,12 @@
 body {
     background-color: #F2E6D0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+
 }
 
 p {
@@ -41,11 +48,14 @@ footer {
     background-color: #F2E6D0;
 }
 
+/* Forms  */
+
 .form-group label {
     color: #4C591C;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
 }
+
 
 .btn-primary {
     color: #ffffff;
