@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-xtcs#irev&&7g95o-_4cv+kz+m!ps$!&$a#p7dgqfpvk5^8e(!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zemaciel-pp4-7hmy4v4z55p.ws-eu101.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
+ALLOWED_HOSTS = ['8000-zemaciel-pp4-svhqmeqz8k1.ws-eu101.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
 
 
 # Application definition
@@ -41,11 +41,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'fourth_app'
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -111,6 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
