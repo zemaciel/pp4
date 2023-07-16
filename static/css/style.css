@@ -6,7 +6,6 @@ body {
 }
 .content {
     flex: 1;
-
 }
 
 p {
@@ -37,7 +36,6 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     color: #4C591C;
-
 }
 
 .title {
@@ -55,7 +53,6 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
 }
-
 
 .btn-primary {
     color: #ffffff;
@@ -79,3 +76,57 @@ footer {
 .fa-brands{
     color:#BFBA73;
 }
+
+/* ==== Restaurant Menu ====*/
+
+/* .nav-link {
+    color: #4C591C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    background-color: #F2E6D0;
+} */
+
+/* .table-menu {
+    width: 90%;
+}
+
+.table-menu tbody td {
+    padding: 5px 0 5px, 0;
+}
+
+.table-menu tbody tr {
+    border-top: 2px solid #BFBA73;
+    border-bottom: 2px solid #BFBA73;
+} */
+
+/* .menu-tabs {
+    align: center;
+} */
+/* 
+.dish-name {
+    color: #4C591C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.dish-price {
+    color: #4C591C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    vertical-align: top;
+    text-align: right;
+}
+
+.dish {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #4C591C;
+} */
