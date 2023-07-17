@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>My Bookings</h2>
+  <ul>
+    {% for booking in bookings %}
+      <li>{{ booking.date }} - {{ booking.time }} at Table {{ booking.table.number }}</li>
+      <a href="{% url 'edit_booking' booking.id %}">Edit</a>
+      <a href="{% url 'delete_booking' booking.id %}">Delete</a>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'new_booking' %}">Create Booking</a>
+{% endblock %}

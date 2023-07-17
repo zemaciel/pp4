@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'fourth_app'
+    'fourth_app',
 ]
 
 SITE_ID = 1
