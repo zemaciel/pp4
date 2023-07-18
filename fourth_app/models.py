@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+TABLEAREA = (
+    ('Indoors', 'Indoors'),
+    ('Outdoors', 'Outdoors'),
+)
 
 TIME = (
     ('11:00', '11:00'),
@@ -22,19 +26,14 @@ TIME = (
     ('21:00', '21:00'),
 )
 
-
-class RestaurantTable(models.Model):
-    number = models.IntegerField(unique=True)
-
-
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    table = models.ForeignKey(RestaurantTable, on_delete=models.CASCADE)
+    table = models.CharField(max_length=12, choices=TABLEAREA, default='Indoors', null=True)
     date = models.DateField()
     time = models.CharField(max_length=20, choices=TIME, default='18:00')
-    guests = models.IntegerField(max_length=2, default='2')
+    guests = models.IntegerField(default=2)
     created_on = models.DateTimeField(auto_now_add=True)
-
+    
     class Meta:
         unique_together = ('table', 'date', 'time')
 

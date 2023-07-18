@@ -1,13 +1,68 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
   <h2>My Bookings</h2>
-  <ul>
-    {% for booking in bookings %}
-      <li>{{ booking.date }} - {{ booking.time }} at Table {{ booking.table.number }}</li>
-      <a href="{% url 'edit_booking' booking.id %}">Edit</a>
-      <a href="{% url 'delete_booking' booking.id %}">Delete</a>
-    {% endfor %}
-  </ul>
-  <a href="{% url 'new_booking' %}">Create Booking</a>
+  <section>
+    <div class="container height mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+          <h3>Manage your Bookings</h3>
+          <div class="container">
+            <div class="row">
+              {% for booking in bookings %}
+              <div class="card text-white bg-dark text-center border-secondary" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Welcome:</h5>
+                  <h6 class="card-subtitle text-white">{{ booking.name }}</h6>
+                  <p class="card-text">
+                    <p>On: {{ booking.date }}</p>
+                    <p>At: {{ booking.time }}</p>
+                    <p>Party of: {{ booking.guests }}</p>
+                    <p>{{ booking.email }}</p>
+                    <p>Phone: {{ booking.phone }}</p>
+                  </p>
+                  <a href="/changebooking/{{booking.id}}" class="btn btn-secondary">Change</a>
+                  <!-- Button trigger modal -->
+                  <a href="/deletebooking/{{booking.id}}" class="btn btn-warning" data-bs-toggle="modal"
+                    data-bs-target="#deleteModal_{{ booking.id }}">Delete</a>
+  
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="deleteModal_{{ booking.id }}" tabindex="-1" aria-labelledby="deleteModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog text-dark">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="deleteModalLabel">Delete Booking</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Please confirm that you want to delete your booking!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                      <a href="{% url 'delete' booking.id %}" class="btn btn-warning">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Show message if there are no bookings -->
+              {% empty %} <p>You have no reservations currently</p>
+              
+              <p>To make a reservation, please <a href="">Create a booking</a>. </p>
+             
+  
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  {% endif %}
 {% endblock %}

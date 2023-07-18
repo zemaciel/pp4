@@ -1,10 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Create Booking</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
-  </form>
+{% if user.is_authenticated %}
+
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+  <div class="container height mt-5 pt-5">
+    <div class="row">
+      <div class="col-md-8 mt-3 offset-md-2">
+        {% if user.is_authenticated %}
+        <h3>Create a Booking</h3>
+
+        <form method="POST">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button class="account-btn" type="submit">Done</button>
+        </form>
+        {% else %}
+        <p>To make a reservation, please <a href="{% url 'account_login' %}">login</a>. If you have not
+          created an account yet, then please <a href="{% url 'account_signup' %}">sign up.</a></p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
 {% endblock %}
