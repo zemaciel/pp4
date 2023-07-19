@@ -27,7 +27,7 @@ TIME = (
 )
 
 class Booking(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE,)
     table = models.CharField(max_length=12, choices=TABLEAREA, default='Indoors', null=True)
     date = models.DateField()
     time = models.CharField(max_length=20, choices=TIME, default='18:00')
@@ -38,4 +38,4 @@ class Booking(models.Model):
         unique_together = ('table', 'date', 'time')
 
     def __str__(self):
-        return str(self.name)
+         return f"{self.user.username} - {self.table} - {self.date}"

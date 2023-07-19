@@ -51,7 +51,7 @@
               <!-- Show message if there are no bookings -->
               {% empty %} <p>You have no reservations currently</p>
               
-              <p>To make a reservation, please <a href="">Create a booking</a>. </p>
+              <p>To make a reservation, please <a href="{% url 'booking_page' %}">Create a booking</a>. </p>
              
   
               {% endfor %}
