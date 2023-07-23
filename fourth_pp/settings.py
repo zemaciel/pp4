@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-xtcs#irev&&7g95o-_4cv+kz+m!ps$!&$a#p7dgqfpvk5^8e(!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 X_FRAME_OPIONS = 'SAMEORIGIN'
 
