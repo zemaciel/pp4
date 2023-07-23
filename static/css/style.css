@@ -36,7 +36,6 @@ h4 {
     font-weight: 300;
 }
 
-
 h5 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
@@ -49,17 +48,20 @@ h5 {
     color: white;
 }
 
-footer {
-    border-top: 6px solid #BFBA73;
-    background-color: #4C591C;
-    color: #F2E6D0
-}
+/* Top Nav Bar */
 
-.logo {
-    font-family: 'Josefin Sans', sans-serif;
+.navbar-nav .nav-link {
+    font-family: 'lato', sans-serif;
     font-weight: 700;
     color: #4C591C;
-}
+  }
+
+.navbar-nav .nav-link.active {
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    color: #4C591C;
+  }
+ 
 
 .bg-sand {
     background-color: #F2E6D0;
@@ -76,6 +78,7 @@ footer {
     font-weight: 500;
 }
 
+/* Buttons */
 .btn-primary {
     color: #ffffff;
     background-color: #4C591C;
@@ -88,12 +91,20 @@ footer {
     border-color: #BFBA73;
 }
 
+/* Hero image on the index page */
 .hero-photo {
         background-image: url('https://res.cloudinary.com/drk0hx3um/image/upload/v1688826694/pp4/hero_1_mjfdog.webp');
         background-size: cover;
         background-position: center;
         height: 350px;
       }
+
+/* Footer */
+footer {
+    border-top: 6px solid #BFBA73;
+    background-color: #4C591C;
+    color: #F2E6D0
+}
 
 .fa-brands{
     color:#BFBA73;
