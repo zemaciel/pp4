@@ -43,7 +43,6 @@ class Booking(models.Model):
     name = models.CharField(max_length=75, default='')
     email = models.EmailField(default='')
     phone = models.CharField(max_length=20, default='')
-    reservervation_id = models.CharField(max_length=50, unique=True, default='')
     table = models.CharField(max_length=12, choices=TABLEAREA, default='Indoors', null=True)
     date = models.DateField()
     time = models.CharField(max_length=20, choices=TIME, default='18:00')

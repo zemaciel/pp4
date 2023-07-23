@@ -11,18 +11,21 @@
           <div class="container">
             <div class="row">
               {% for booking in bookings %}
-              <div class="card text-white bg-dark text-center border-secondary" style="width: 18rem;">
+              <div class="card text-left shadow" style="width: 18rem; background-color: #f3ede1;">
                 <div class="card-body">
-                  <h5 class="card-title mb-3">Welcome:</h5>
-                  <h6 class="card-subtitle text-white">{{ booking.name }}</h6>
-                  <p class="card-text">
-                    <p>On: {{ booking.date }}</p>
-                    <p>At: {{ booking.time }}</p>
-                    <p>Party of: {{ booking.guests }}</p>
-                    <p>{{ booking.email }}</p>
-                    <p>Phone: {{ booking.phone }}</p>
+                  <h5 class="card-title mb-3">Booking Confirmed:</h5>
+                  <h6 class="card-subtitle"> Dear {{ booking.name }}</h6>
+                  <p> <small class="text-muted">Here are the details of your booking</small></p>
+                  <p class="lh-base">
+                    On: <span class="fw-bold">{{ booking.date }} </span> <br>
+                    At: <span class="fw-bold"> {{ booking.time }} </span><br>
+                    Party of: <span class="fw-bold"> {{ booking.guests }} </span><br>
+                    <span class="fw-bold">{{ booking.table}} seating</span></p>
+                  <hr>
+                    <p>Email: <span class="fw-bold">{{ booking.email }}</span><br>
+                    Phone: <span class="fw-bold">{{ booking.phone }}</span></p>
                   </p>
-                  <a href="/changebooking/{{booking.id}}" class="btn btn-secondary">Change</a>
+                  <a href="/changebooking/{{booking.id}}" class="btn btn-primary">Change</a>
                   <!-- Button trigger modal -->
                   <a href="/deletebooking/{{booking.id}}" class="btn btn-warning" data-bs-toggle="modal"
                     data-bs-target="#deleteModal_{{ booking.id }}">Delete</a>

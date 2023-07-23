@@ -6,9 +6,9 @@ class DateInput(forms.DateInput):
     input_type = 'date'
 
 class BookingForm(forms.ModelForm):
-    # name = forms.CharField(
-    #     widget=forms.TextInput(attrs={'placeholder': 'Name'}),
-    # )
+    name = forms.CharField(
+        widget=forms.TextInput(attrs={'placeholder': 'Name'}),
+    )
 
     email = forms.EmailField(
         widget=forms.TextInput(attrs={'placeholder': 'name@example.com'}),
@@ -24,7 +24,7 @@ class BookingForm(forms.ModelForm):
 
     class Meta:
         model = Booking
-        fields = ('email', 'phone', 'table', 'date', 'time', 'guests')
+        fields = ('name', 'email', 'phone', 'table', 'date', 'time', 'guests')
         widgets = {
             'date': DateInput(),
         }

@@ -63,6 +63,10 @@ footer {
     background-color: #F2E6D0;
 }
 
+.bg-sand-lighter {
+    background-color: #f3ede1;
+}
+
 /* Forms  */
 
 .form-group label {
@@ -93,6 +97,7 @@ footer {
 .fa-brands{
     color:#BFBA73;
 }
+
 
 /* ==== Restaurant Menu ====*/
 
