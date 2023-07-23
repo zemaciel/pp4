@@ -8,7 +8,7 @@
 </div>
 <!-- Welcome container -->
 <div class="container mt-5">
-    <div class="title">
+    <div class="text-center">
         <h1>Welcome</h1>
     </div>
     <div class="row">
@@ -31,7 +31,7 @@
         <h1>Menu</h1>
     </div>
 
-    <div class="container mt-6 mb-10 menu-tabs">
+    <div class="container mt-6 mb-10 menu-tabs pb-5">
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active food-menu-link" data-toggle="tab" href="#tab1">Starters</a>
@@ -43,7 +43,7 @@
                 <a class="nav-link food-menu-link" data-toggle="tab" href="#tab3">Desserts</a>
             </li>
         </ul>
-
+        <!-- Restaurant Menu - Starters -->
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="tab1">
                 <h4 class="text-center">Small Bites and Starters</h4>
@@ -80,6 +80,7 @@
                     </tbody>
                 </table>
             </div>
+            <!-- Restaurant Menu - Mains -->
             <div class="tab-pane fade" id="tab2">
                 <h4 class="text-center">Mains for Lunch and Dinner</h4>
                 <table class="table-menu">
@@ -131,6 +132,7 @@
                     </tbody>
                 </table>
             </div>
+            <!-- Restaurant Menu - Desserts -->
             <div class="tab-pane fade" id="tab3">
                 <h4 class="text-center">Somenthing Sweet</h4>
                 <table class="table-menu">
@@ -188,6 +190,26 @@
             </div>
         </div>
     </div>
+    <!-- End of Restaurant Menu -->
+
+    <div class="row p-3 text-white" style="background-color: #4C591C;">
+        <div class="col-md-4">
+            <img src="https://res.cloudinary.com/drk0hx3um/image/upload/v1688825330/pp4/friends_xczazo.webp" alt="Friends in a restaurant" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <h3 class="text-white">Join Now & Book!</h3>
+            <p>Discover a world of delightful dining experiences at The 4th Fork!<br>
+            We extend a warm and hearty welcome to you. Why not enhance your dining journey with us by creating an exclusive account? By signing up, you'll gain access to a treasure trove of rewards and benefits, along with the convenience of fast, hassle-free table reservations. Don't let this opportunity slip away - join us and elevate your culinary adventures today!</p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'booking_page' %}"><button class="btn btn-primary">Book a table</button></a> 
+            {% else %}
+            <a href="{% url 'account_signup' %}"><button class="btn btn-primary">Register</button></a>
+            <a href="{% url 'account_login' %}"><button class="btn btn-primary">Login</button></a>
+            {% endif %}
+        </div>
+    </div>
+
+
 </div>
 
 {%endblock%}

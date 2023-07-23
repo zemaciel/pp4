@@ -27,20 +27,26 @@ h2 {
 
 h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 500;
-    color: #736F34;
+    font-weight: 300;
+    color: #4C591C;
 }
 
 h4 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    color: #4e4d4a;
 }
 
-h3 {
+
+h5 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    color: #4C591C;
+    font-weight: 500;
+}
+
+.clear-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    color: white;
 }
 
 footer {
@@ -55,10 +61,6 @@ footer {
     color: #4C591C;
 }
 
-.title {
-    text-align: center;
-}
-
 .bg-sand {
     background-color: #F2E6D0;
 }
@@ -68,7 +70,6 @@ footer {
 }
 
 /* Forms  */
-
 .form-group label {
     color: #4C591C;
     font-family: 'Josefin Sans', sans-serif;

@@ -2,11 +2,19 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  <h2>Update Your Booking</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
-  </form>
+<section>
+  <div class="container mt-5 d-flex justify-content-center align-items-center">
+    <div>
+      <h1 class="text-center">Update Your Booking</h1>
+      <div class="md-8">
+        <form method="post" class="text-left">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 {% endif %}
 {% endblock %}
