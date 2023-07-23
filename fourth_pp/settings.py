@@ -31,6 +31,8 @@ SECRET_KEY = 'django-insecure-xtcs#irev&&7g95o-_4cv+kz+m!ps$!&$a#p7dgqfpvk5^8e(!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+X_FRAME_OPIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = ['8000-zemaciel-pp4-svhqmeqz8k1.ws-eu102.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
 
 
