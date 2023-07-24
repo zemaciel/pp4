@@ -38,6 +38,7 @@ TIME = (
     ('21:00', '21:00'),
 )
 
+
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=75, default='')
@@ -48,7 +49,7 @@ class Booking(models.Model):
     time = models.CharField(max_length=20, choices=TIME, default='18:00')
     guests = models.CharField(max_length=2, choices=GUESTNUMBER, default='2')
     created_on = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         unique_together = ('table', 'date', 'time')
 

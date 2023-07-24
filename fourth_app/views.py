@@ -4,18 +4,16 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
 
+
 def home(request):
-    """The view for the start page. Renders the index.html
-    page which also extends the base.html
+    """The view for the start page.
     """
     return render(request, 'index.html')
 
 
 def booking_page(request):
-    """The view for the booking page. If user is logged in it renders the
-    booking.html, otherwise it renders the page to login or signup.
-    When user has made a booking it redirects to mybooking overview page.
-    It takes the input from the form and store it in the Booking model.
+    """It renders the booking.html for logged users,
+    otherwise it renders the page to login or signup.
     """
     if request.method == 'POST':
         form = BookingForm(data=request.POST)
@@ -36,9 +34,9 @@ def booking_page(request):
 
 
 def mybookings_page(request):
-    """The view that renders the mybookings.html which shows all
-    current booking by the user. Checks if user is logged in
-    otherwise it redirects to the signup page.
+    """It checked if the user is logged in and renders mybookings.html
+    showing their current bookings. If user not logged in it redirects
+    to the signup page.
     """
     if request.user.is_authenticated:
         bookings = Booking.objects.filter(user=request.user)
@@ -73,7 +71,7 @@ def edit_booking(request, booking_id):
 
 
 def delete_booking(request, booking_id):
-    """The view that performs the deletion of a booking.
+    """View that performs the deletion of a booking.
     Checks if current user matches the user that made the booking,
     otherwise it redirects to the mybookings_page.
     """

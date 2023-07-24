@@ -2,8 +2,10 @@
 from django import forms
 from .models import Booking
 
+
 class DateInput(forms.DateInput):
     input_type = 'date'
+
 
 class BookingForm(forms.ModelForm):
     name = forms.CharField(
@@ -17,10 +19,6 @@ class BookingForm(forms.ModelForm):
     phone = forms.CharField(
         widget=forms.TextInput(attrs={'placeholder': '+123456789'}),
     )
-
-    # booking_id = forms.CharField(
-    #     widget=forms.TextInput(attrs={'placeholder': 'Enter booking ID'}),
-    # )
 
     class Meta:
         model = Booking
