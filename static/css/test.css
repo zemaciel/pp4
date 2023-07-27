@@ -134,6 +134,10 @@ footer {
     border-bottom: 2px solid #BFBA73;
 }
 
+.menu-tabs {
+    text-align: center;
+}
+
 .dish-name {
     color: #4C591C;
     font-family: 'Josefin Sans', sans-serif;
