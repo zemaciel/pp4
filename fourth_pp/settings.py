@@ -33,7 +33,12 @@ DEBUG = False
 
 X_FRAME_OPIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-zemaciel-pp4-svhqmeqz8k1.ws-eu102.gitpod.io', 'localhost', '127.0.0.1', 'pp04.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-zemaciel-pp4-svhqmeqz8k1.ws-eu102.gitpod.io',
+    'localhost',
+    '127.0.0.1',
+    'pp04.herokuapp.com'
+]
 
 
 # Application definition
@@ -60,12 +65,12 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 MESSAGE_TAGS = {
-        messages.DEBUG: 'alert-info',
-        messages.INFO: 'alert-info',
-        messages.SUCCESS: 'alert-success',
-        messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',
-    }
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
