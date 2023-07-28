@@ -4,6 +4,7 @@ from .models import Booking
 # Register your models here.
 # admin.site.register(Booking)
 
+
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_display = ('name', 'date', 'time', 'created_on')
