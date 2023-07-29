@@ -412,11 +412,11 @@ The stages are:
     python3 manage.py startapp pp04app
     ```
     
-    In the “project04” folder, edit the [settings.py](http://settings.py) to include the new app “pp04app”. It is also necessary to update the filed ALLOWED_HOSTS. 
+    In the “project04” folder, edit the settings.py to include the new app “pp04app”. It is also necessary to update the filed ALLOWED_HOSTS. 
     
     The changes now need to be migrated to the data base: `python3 manage.py makemigrations` and `python3 manage.py migrate`
     
-    To run the server simply type on the terminal `python3 [manage.py](http://manage.py) runserver`
+    To run the server simply type on the terminal `python3 manage.py runserver`
     
 - Configure Cloudinary, PostgresSQL and Heroku
     
@@ -432,7 +432,7 @@ The stages are:
     
     **env.py and Secret Key**
     
-    Create an env.py file, and set it up as the code below. Using the URLs mentioned above and a a “Secret Key” you will create. Below there's a sample how the [env.py](http://env.py) should look like:
+    Create an env.py file, and set it up as the code below. Using the URLs mentioned above and a a “Secret Key” you will create. Below there's a sample how the env.py should look like:
     
     ```bash
     import os
