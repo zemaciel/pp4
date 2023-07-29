@@ -477,8 +477,6 @@ In the Heroku dashboard, navigate to the "Resources" tab. Search for "Heroku Pos
 Go to the "Settings" tab, then click "Reveal Config Vars." Here, add the following environment variables:
     - **`SECRET_KEY`**: The same Secret Key in the project's env.py.
     - **`DATABASE_URL`**: The PostgreSQL URL of the instance created for this project.
-    - **`EMAIL_HOST_USER`**: Your email address for sending emails.
-    - **`EMAIL_HOST_PASS`**: Your email app password for email authentication.
     - **`CLOUDINARY_URL`**: The URL for your Cloudinary API.
 7. **Deployment from GitHub:**
 In the Heroku dashboard, go to the "Deploy" tab. Scroll down to "Connect to GitHub" and sign in/authorise your GitHub account when prompted. Then, search for the repository you want to deploy and click "Connect."
@@ -544,25 +542,16 @@ In implementing the booking models, views, and templates, I incorporated some co
 
 **Resources on the web:**
 
-StackOverFlow - Django Reservation System ([link](https://stackoverflow.com/questions/54932056/django-reservation-system))
-
-StackOverFlow - Prevent booking on previous dates. ([link](https://stackoverflow.com/questions/70671189/avoid-booking-past-dates-with-django))
-
-StackOverFlow - Tab selection in bootstrap nav-tab. ([link](https://stackoverflow.com/questions/75793138/tab-selection-in-bootstrap-nav-tab))
-
-StackOverFlow - SVG not rendering. ([link](https://stackoverflow.com/questions/10737166/chrome-not-rendering-svg-referenced-via-img-element))
-
-DjangoDocs - Django Name Convention. ([link](https://docs.djangoproject.com/en/dev/topics/db/models/#meta-options))
-
-Medium - Django Tutorial On How To Create A Booking System For A Health Clinic ([link](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78))
-
-Bootstrap - Docs ([link](https://getbootstrap.com/docs/5.3/getting-started/introduction/))
-
-GitHub - I think therefore I blog ([link](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/12_final_deployment))
-
-GitHub - FireHouse Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
-
-GitHub - SizzleAndSteak Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
+- StackOverFlow - Django Reservation System ([link](https://stackoverflow.com/questions/54932056/django-reservation-system))
+- StackOverFlow - Prevent booking on previous dates. ([link](https://stackoverflow.com/questions/70671189/avoid-booking-past-dates-with-django))
+- StackOverFlow - Tab selection in bootstrap nav-tab. ([link](https://stackoverflow.com/questions/75793138/tab-selection-in-bootstrap-nav-tab))
+- StackOverFlow - SVG not rendering. ([link](https://stackoverflow.com/questions/10737166/chrome-not-rendering-svg-referenced-via-img-element))
+- DjangoDocs - Django Name Convention. ([link](https://docs.djangoproject.com/en/dev/topics/db/models/#meta-options))
+- Medium - Django Tutorial On How To Create A Booking System For A Health Clinic ([link](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78))
+- Bootstrap - Docs ([link](https://getbootstrap.com/docs/5.3/getting-started/introduction/))
+- GitHub - I think therefore I blog ([link](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/12_final_deployment))
+- GitHub - FireHouse Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
+- GitHub - SizzleAndSteak Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
 
 <!-- TOC --><a name="media-and-design-references"></a>
 ## Media and design references
