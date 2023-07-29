@@ -13,12 +13,14 @@
     </div>
     <div class="row">
         <div class="col-md-3">
-            <img src="https://res.cloudinary.com/drk0hx3um/image/upload/v1688826694/pp4/chef_sq_zaqx3j.webp" alt="Chef preparing a dish" class="img-fluid">
+            <img src="https://res.cloudinary.com/drk0hx3um/image/upload/v1688826694/pp4/chef_sq_zaqx3j.webp"
+                alt="Chef preparing a dish" class="img-fluid">
         </div>
         <div class="col-md-8">
             <h3 class="pt-2">The 4th Fork: Galway's Modern Gem</h3>
             <p>Welcome to The 4th Fork, a modern and sophisticated restaurant located in the heart of Galway City.
-                Our laid-back atmosphere and stylish decor make it the perfect place for a quick lunch with colleagues or a relaxed
+                Our laid-back atmosphere and stylish decor make it the perfect place for a quick lunch with colleagues
+                or a relaxed
                 dinner with friends. Our menu features fresh, locally-sourced ingredients and a variety of dishes
                 to satisfy any palate. Whether you're in the mood for a light salad or a hearty steak, our chefs
                 will prepare it to perfection. Come visit us at The 4th Fork and experience the perfect blend of
@@ -137,11 +139,12 @@
                 <h4 class="text-center">Something Sweet</h4>
                 <table class="table-menu">
                     <tbody>
-                        <td class="dish">
-                            <strong class="dish-name">Chocolate Lava Cake</strong><br>
-                            Served warm with a molten chocolate center
-                        </td>
-                        <td class="dish-price">€8</td>
+                        <tr>
+                            <td class="dish">
+                                <strong class="dish-name">Chocolate Lava Cake</strong><br>
+                                Served warm with a molten chocolate center
+                            </td>
+                            <td class="dish-price">€8</td>
                         </tr>
                         <tr>
                             <td class="dish">
@@ -194,17 +197,21 @@
 
     <div class="row p-3 text-white" style="background-color: #4C591C;">
         <div class="col-md-4">
-            <img src="https://res.cloudinary.com/drk0hx3um/image/upload/v1690210596/pp4/friends_xf537q.webp" alt="Friends in a restaurant" class="img-fluid">
+            <img src="https://res.cloudinary.com/drk0hx3um/image/upload/v1690210596/pp4/friends_xf537q.webp"
+                alt="Friends in a restaurant" class="img-fluid">
         </div>
         <div class="col-md-8">
             <h3 class="text-white pt-2">Join Now & Book!</h3>
             <p>Embark on a delightful dining adventure at The 4th Fork!<br>
-            We're thrilled to have you here. To make your dining experience even more special, we invite you to create an exclusive account. Enjoy the convenience of fast, hassle-free table reservations - the primary reasons to sign up or log in. Don't miss this chance to elevate your culinary adventures with us! Join now and start savoring every moment today!</p>
+                We're thrilled to have you here. To make your dining experience even more special, we invite you to
+                create an exclusive account. Enjoy the convenience of fast, hassle-free table reservations - the primary
+                reasons to sign up or log in. Don't miss this chance to elevate your culinary adventures with us! Join
+                now and start savoring every moment today!</p>
             {% if user.is_authenticated %}
-            <a href="{% url 'booking_page' %}"><button class="btn btn-primary">Book a table</button></a> 
+            <a href="{% url 'booking_page' %}" class="btn btn-primary">Book a table</a>
             {% else %}
-            <a href="{% url 'account_signup' %}"><button class="btn btn-primary">Register</button></a>
-            <a href="{% url 'account_login' %}"><button class="btn btn-primary">Login</button></a>
+            <a href="{% url 'account_signup' %}" class="btn btn-primary">Register</a>
+            <a href="{% url 'account_login' %}" class="btn btn-primary">Login</a>
             {% endif %}
         </div>
     </div>

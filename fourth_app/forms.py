@@ -1,6 +1,7 @@
 # forms.py
 from django import forms
 from .models import Booking
+from django.utils import timezone
 
 
 class DateInput(forms.DateInput):
@@ -26,3 +27,9 @@ class BookingForm(forms.ModelForm):
         widgets = {
             'date': DateInput(),
         }
+
+    def clean_date(self):
+        date = self.cleaned_data['date']
+        if date < timezone.now().date():
+            raise forms.ValidationError("Please, choose a future date.")
+        return date
