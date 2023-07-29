@@ -538,7 +538,7 @@ This project was mostly based on the Code Institute walkthrough “[I think ther
 
 The steps for deployment were outlined there and features like authentication, confirmation messages and templates were extracted from the walkthrough. The templates were adjusted from Bootstrap 4 to Bootstrap 5 and also adapted to meet this project design. 
 
-In implementing the booking models, views, and templates, I incorporated some code inspired by the [FireHouse Restaurant](https://github.com/ErikHgm/FireHouse-Restaurant-Project/) and [SizzleAndSteak Restaurant projects](https://github.com/ErikHgm/FireHouse-Restaurant-Project/), which were both created by fellow Code Institute students as their 4th portfolio projects.
+In implementing the booking models, views, and templates, I incorporated some code inspired by the [FireHouse Restaurant](https://github.com/ErikHgm/FireHouse-Restaurant-Project/) and [SizzleAndSteak Restaurant projects](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak), which were both created by fellow Code Institute students as their 4th portfolio projects.
 
 **Resources on the web:**
 
@@ -551,7 +551,7 @@ In implementing the booking models, views, and templates, I incorporated some co
 - Bootstrap - Docs ([link](https://getbootstrap.com/docs/5.3/getting-started/introduction/))
 - GitHub - I think therefore I blog ([link](https://github.com/Code-Institute-Solutions/Django3blog/tree/master/12_final_deployment))
 - GitHub - FireHouse Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
-- GitHub - SizzleAndSteak Restaurant ([link](https://github.com/ErikHgm/FireHouse-Restaurant-Project/))
+- GitHub - SizzleAndSteak Restaurant ([link](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak/))
 
 <!-- TOC --><a name="media-and-design-references"></a>
 ## Media and design references
